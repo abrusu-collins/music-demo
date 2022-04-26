@@ -88,19 +88,44 @@ const New = () => {
       </div>
 
 
-      <div id="player">
+      <div id="player" className="m-auto">
       <h1 className="text-2xl mb-2 mt-5 text-gray-500 dark:text-gray-400">Recommended Songs</h1>
+      <div id="allsongs">
 
       <div id="song">
-        <img src="" alt="" />
+        <img src="IMG_5298.jpg" alt="" />
         <p>Drake - Hotline Bling</p>
         <div id="controls">
 
         </div>
       </div>
 
+      <div id="song">
+        <img src="IMG_5299.jpg" alt="" />
+        <p>Adele - Hello</p>
+        <div id="controls">
+
+        </div>
+      </div>
+      <div id="song">
+        <img src="IMG_5242.jpg" alt="" />
+        <p>Kwesi Arthur - Drama</p>
+        <div id="controls">
+
+        </div>
+      </div>
+
+      <div id="song">
+        <img src="IMG_5300.jpg" alt="" />
+        <p>Ed Sheeran - Perfect</p>
+        <div id="controls">
+
+        </div>
+      </div>
+      </div>
 
       </div>
+     
     </div>
   );
 };

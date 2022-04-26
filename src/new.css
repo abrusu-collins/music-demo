@@ -53,3 +53,16 @@ align-items: center;
     object-fit: cover;
     object-position: center;
 }
+
+
+#player{
+    width:70%;
+    
+}
+#song img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
