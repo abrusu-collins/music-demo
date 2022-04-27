@@ -1,5 +1,10 @@
 import React from "react";
 import "./new.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 const New = () => {
   return (
     <div>
@@ -8,6 +13,8 @@ const New = () => {
           <img src="IMG_5256.jpg" alt="" />
           <p>Username</p>
         </div>
+        <a href="google.com">My Playlists</a>
+
         <a href="google.com">Switch to Artiste Mode</a>
       </nav>
 
@@ -38,94 +45,110 @@ const New = () => {
       </form>
 
       <div id="artistestofollow" className="mt-3">
-        <h1 className="text-2xl mb-2 mt-5 text-gray-500 dark:text-gray-400">Artistes to follow</h1>
+        <h1 className="text-2xl mb-2 mt-5 text-gray-500 dark:text-gray-400">
+          Artistes to follow
+        </h1>
         <div id="artistes">
+          <div id="drake">
+            <img src="IMG_5298.jpg" alt="" />
+            <p>Drake</p>
 
-        <div id="drake">
-          <img src="IMG_5298.jpg" alt="" />
-          <p>Drake</p>
+            <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+              Follow
+            </button>
+          </div>
 
-          <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-            Follow
-          </button>
-        </div>
+          <div id="drake">
+            <img src="IMG_5298.jpg" alt="" />
+            <p>Drake</p>
 
-        <div id="drake">
-          <img src="IMG_5298.jpg" alt="" />
-          <p>Drake</p>
+            <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+              Follow
+            </button>
+          </div>
 
-          <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-            Follow
-          </button>
-        </div>
+          <div id="drake">
+            <img src="IMG_5298.jpg" alt="" />
+            <p>Drake</p>
 
-        <div id="drake">
-          <img src="IMG_5298.jpg" alt="" />
-          <p>Drake</p>
+            <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+              Follow
+            </button>
+          </div>
 
-          <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-            Follow
-          </button>
-        </div>
+          <div id="drake">
+            <img src="IMG_5298.jpg" alt="" />
+            <p>Drake</p>
 
-        <div id="drake">
-          <img src="IMG_5298.jpg" alt="" />
-          <p>Drake</p>
+            <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+              Follow
+            </button>
+          </div>
 
-          <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-            Follow
-          </button>
-        </div>
-
-        <div id="drake">
-          <img src="IMG_5298.jpg" alt="" />
-          <p>Drake</p>
-          <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-            Follow
-          </button>
-        </div>
+          <div id="drake">
+            <img src="IMG_5298.jpg" alt="" />
+            <p>Drake</p>
+            <button className="w-full px-4 py-2 mt-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+              Follow
+            </button>
+          </div>
         </div>
       </div>
-
 
       <div id="player" className="m-auto">
-      <h1 className="text-2xl mb-2 mt-5 text-gray-500 dark:text-gray-400">Recommended Songs</h1>
-      <div id="allsongs">
+        <h1 className="text-2xl mb-2 mt-5 text-gray-500 dark:text-gray-400">
+          Recommended Songs
+        </h1>
+        <div id="allsongs">
+          <div id="song">
+            <center>
+              <img src="IMG_5298.jpg" alt="" />
+            </center>
+            <p>Drake - Hotline Bling</p>
+            <div id="controls">
+              <FontAwesomeIcon icon={faChevronLeft} />
+              <FontAwesomeIcon icon={faPlay} size="2x" />
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </div>
 
-      <div id="song">
-        <img src="IMG_5298.jpg" alt="" />
-        <p>Drake - Hotline Bling</p>
-        <div id="controls">
+          <div id="song">
+            <center>
+              <img src="IMG_5299.jpg" alt="" />
+            </center>
 
+            <p>Adele - Hello</p>
+            <div id="controls">
+              <FontAwesomeIcon icon={faChevronLeft} />
+              <FontAwesomeIcon icon={faPlay} size="2x" />
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </div>
+          <div id="song">
+            <center>
+              <img src="IMG_5242.jpg" alt="" />
+            </center>
+            <p>Kwesi Arthur - Drama</p>
+            <div id="controls">
+              <FontAwesomeIcon icon={faChevronLeft} />
+              <FontAwesomeIcon icon={faPlay} size="2x" />
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </div>
+
+          <div id="song">
+            <center>
+              <img src="IMG_5300.jpg" alt="" />
+            </center>
+            <p>Ed Sheeran - Perfect</p>
+            <div id="controls">
+              <FontAwesomeIcon icon={faChevronLeft} />
+              <FontAwesomeIcon icon={faPlay} size="2x" />
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </div>
         </div>
       </div>
-
-      <div id="song">
-        <img src="IMG_5299.jpg" alt="" />
-        <p>Adele - Hello</p>
-        <div id="controls">
-
-        </div>
-      </div>
-      <div id="song">
-        <img src="IMG_5242.jpg" alt="" />
-        <p>Kwesi Arthur - Drama</p>
-        <div id="controls">
-
-        </div>
-      </div>
-
-      <div id="song">
-        <img src="IMG_5300.jpg" alt="" />
-        <p>Ed Sheeran - Perfect</p>
-        <div id="controls">
-
-        </div>
-      </div>
-      </div>
-
-      </div>
-     
     </div>
   );
 };
